@@ -33,7 +33,7 @@ def quiz_form():
     </body>
     </html>
     """
-
+    # html_end = '''</select>''' + frm_submit + '''</form></body></html>'''
     options = ""
     q_list = get_quises()
 
@@ -69,7 +69,7 @@ app.add_url_rule('/result', 'result', result)
 # ========================
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'ThisIsSecretSecretSecretLife'
+app.config['SECRET_KEY'] = 'ThisActuallyNotMySecretSecretSecretLifeButYourSecretSecretSecretLifeAndYourFamillySecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretSecretLife'
 
 app.add_url_rule('/', 'index', index, methods=['GET'])
 app.add_url_rule('/index', 'index', index, methods=['GET', 'POST'])
